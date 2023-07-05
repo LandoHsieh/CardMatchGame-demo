@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CBB108037_謝育誠</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="game-title">湯馬chill黑火車哺哺</div>
+<!--<div data-video="wi9wL7ReHDc" data-autoplay="1" data-loop="1" id="youtube-audio">
+</div>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script> -->
+<button id="turnonbgm" class="turnonbgm">開啟音樂</button>
+<script>turnonbgm()</script>
+<button id="turnoffbgm" class="turnoffbgm">關閉音樂</button>
+<script>turnoffbgm()</script>
+<button id="start_btn" class="start-btn visible">
+  開始遊戲!
+</button>
+<button class="victoryTitle hide">
+  Victory!<br>
+  <font size="5">Click To Next Level</font></button>
+<h1 class="gameOverTitle hide">GameOver
+  <font size="5">Refresh To Restart!</font>
+</h1>
+<div class="game-container">
+  <div class="game-info-container">
+    <div class="game-info">
+      Time： <span id="time-remaining"></span>
+    </div>
+    <div class="game-info">
+      Level: <span id="gameLevel"></span>
+    </div>
+  </div>
+  <div class="card" id="card1">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuU6MW8hA0i1oa2kubKHs716o5WfLx08pvAg&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card" id="card2">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuU6MW8hA0i1oa2kubKHs716o5WfLx08pvAg&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card" id="card3">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNS_IqcLtdXav-JwBS4MmLRbHdr42LCXKwg&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card" id="card4">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnz1YfNEZ_NxGWI5Xy3jmOdjbUQ2IPDYg52Q&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuNS_IqcLtdXav-JwBS4MmLRbHdr42LCXKwg&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://storage.qoo-img.com/game/16341/S7ehqu0BKVmPH05PpoFt5LPy1zfBZ1ye.png">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://storage.qoo-img.com/game/16341/S7ehqu0BKVmPH05PpoFt5LPy1zfBZ1ye.png">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtCsiOSIX11oDfSMpiHl4IN9WH6SajXS7bDA&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtCsiOSIX11oDfSMpiHl4IN9WH6SajXS7bDA&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnz1YfNEZ_NxGWI5Xy3jmOdjbUQ2IPDYg52Q&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR58X4YAJ7X-7BjemNqGqXClV_EeMzCeRG8w&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR58X4YAJ7X-7BjemNqGqXClV_EeMzCeRG8w&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOqr0M6W7-PiXvVk0Ejt4dNnDYR-aajh-dw&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOqr0M6W7-PiXvVk0Ejt4dNnDYR-aajh-dw&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyCDyMfA86tgxgRGDL0n9Yzpc9ZyuI6yLQQ&usqp=CAU">
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-back card-face">
+      <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+    </div>
+    <div class="card-front card-face">
+      <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyCDyMfA86tgxgRGDL0n9Yzpc9ZyuI6yLQQ&usqp=CAU">
+    </div>
+  </div>
+
+<!--level2-->
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZnTbp24cxSedVD-ZOLn1zaaY2udbQ6BPPw&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREZnTbp24cxSedVD-ZOLn1zaaY2udbQ6BPPw&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtUaJ9cotjhRke8lulry4LpChkb-OCYOJIA&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThtUaJ9cotjhRke8lulry4LpChkb-OCYOJIA&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5V6VDhPFEIFZ6S1ah52_aJaQYr6B3SuVSw&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ5V6VDhPFEIFZ6S1ah52_aJaQYr6B3SuVSw&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIAwbC3yPqMVwDOYxK35ig9OoFLIfqVPpgA&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGIAwbC3yPqMVwDOYxK35ig9OoFLIfqVPpgA&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEihisUrCtZWHVRb3qjV1pJRbVXd-16r3J7Q&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEihisUrCtZWHVRb3qjV1pJRbVXd-16r3J7Q&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlfL-KxGQJ9OUMKZY7A4QB5jVv7U6ALwjEQ&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLlfL-KxGQJ9OUMKZY7A4QB5jVv7U6ALwjEQ&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfA5mugC13HoFCaYUXtn7s5z-IbY-KZZrwHw&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfA5mugC13HoFCaYUXtn7s5z-IbY-KZZrwHw&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRedU2hIABPvVofo4e_ZnJ8XgVVMH8nJRvIrw&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRedU2hIABPvVofo4e_ZnJ8XgVVMH8nJRvIrw&usqp=CAU">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="data:image/jpeg;base64,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">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="data:image/jpeg;base64,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">
+  </div>
+</div>
+
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxFtFstlI_YM6KPVNpMwujiX5Ld4xaVRQmA&usqp=CAU">
+  </div>
+</div>
+<div class="card level2">
+  <div class="card-back card-face">
+    <img class="thomas" src="https://e7.pngegg.com/pngimages/434/719/png-clipart-thomas-friends-desktop-wall-decal-train-computer-meme.png">
+  </div>
+  <div class="card-front card-face">
+    <img class="card-value" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdxFtFstlI_YM6KPVNpMwujiX5Ld4xaVRQmA&usqp=CAU">
+  </div>
+</div>
+</div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src="Scripts/4.js" type="text/javascript"></script>
+</body>
+</html>
